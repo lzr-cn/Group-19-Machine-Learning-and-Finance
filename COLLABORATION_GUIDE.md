@@ -4,36 +4,117 @@
 
 ## 📋 快速开始步骤
 
-### 1️⃣ **克隆仓库**
+### ⭐ **推荐方式：使用 GitHub Codespace（在线开发）**
+
+#### 优势
+✅ 无需安装任何软件  
+✅ 所有团队成员环境一致  
+✅ 随时随地在浏览器中开发  
+✅ 自动保存代码  
+✅ 学生免费使用  
+
+#### 步骤
+
+**1️⃣ 打开仓库**
+
+访问：https://github.com/lzr-cn/Group-19-Machine-Learning-and-Finance
+
+**2️⃣ 创建 Codespace**
+
+- 点击绿色的 **"Code"** 按钮
+- 选择 **"Codespaces"** 标签
+- 点击 **"Create codespace on main"**
+
+```
+┌──────────────────────────────────┐
+│ Code ▼                           │
+├──────────────────────────────────┤
+│ Local                            │
+│   Clone                          │
+│   Download ZIP                   │
+│                                  │
+│ Codespaces  ← 点这里！           │
+│   [Create codespace on main]     │
+└──────────────────────────────────┘
+```
+
+**3️⃣ 等待加载**
+
+稍等片刻，浏览器会打开一个完整的 VS Code 编辑器！
+
+**4️⃣ 安装依赖**
+
+在底部的终端中输入：
+
+```bash
+pip install -r requirements.txt
+```
+
+**5️⃣ 验证安装**
+
+```bash
+pytest tests/ -v
+```
+
+如果所有测试都通过 ✓，恭喜！你已经准备好开发了！
+
+---
+
+## 🖥️ 备选方案：本地开发（需要配置）
+
+如果你想在本地电脑上开发，按照以下步骤：
+
+### 前置要求
+
+安装以下软件（如果还没有）：
+
+1. **Git**：https://git-scm.com
+   - Windows 用户：下载 exe 文件，按默认选项安装
+   - Mac 用户：运行 `brew install git`
+
+2. **Python 3.8+**：https://www.python.org
+   - 下载后按默认选项安装
+   - 记得勾选 "Add Python to PATH"
+
+### 本地开发步骤
+
+**1️⃣ 打开终端**
+
+- **Windows**：按 `Win + R`，输入 `cmd`
+- **Mac**：按 `Cmd + Space`，输入 `terminal`
+- **Linux**：打开你的终端应用
+
+**2️⃣ 克隆仓库**
 
 ```bash
 git clone https://github.com/lzr-cn/Group-19-Machine-Learning-and-Finance.git
 cd Group-19-Machine-Learning-and-Finance
 ```
 
-### 2️⃣ **设置本地环境**
+**3️⃣ 创建虚拟环境**
 
 ```bash
-# 创建虚拟环境（推荐使用 Python 3.8+）
-python -m venv venv
-
-# 激活虚拟环境
-# macOS/Linux:
+# Mac/Linux
+python3 -m venv venv
 source venv/bin/activate
-# Windows:
-venv\Scripts\activate
 
-# 安装依赖
+# Windows
+python -m venv venv
+venv\Scripts\activate
+```
+
+看到 `(venv)` 前缀说明虚拟环境激活成功
+
+**4️⃣ 安装依赖**
+
+```bash
 pip install -r requirements.txt
 ```
 
-### 3️⃣ **验证安装**
+**5️⃣ 验证安装**
 
 ```bash
-# 运行测试
 pytest tests/ -v
-
-# 应该看到所有测试通过 ✓
 ```
 
 ---
@@ -51,6 +132,8 @@ main              # 主分支（生产环境）
 ```
 
 ### 创建功能分支
+
+在 Codespace 或本地终端中运行：
 
 ```bash
 # 1. 更新本地 develop 分支
@@ -73,22 +156,23 @@ git checkout -b feature/your-feature-name
 
 ### Step 1: 修改代码
 
-```bash
-# 编辑文件...
-# 例如：src/preprocessing.py
+在编辑器中编辑文件：
+- 例如：`src/preprocessing.py`
+- Codespace 会自动保存
 
-# 查看修改
+### Step 2: 查看修改
+
+在终端中输入：
+
+```bash
 git status
 git diff
 ```
 
-### Step 2: 提交更改
+### Step 3: 提交更改
 
 ```bash
 # 添加文件到暂存区
-git add src/preprocessing.py
-
-# 或添加所有修改
 git add .
 
 # 提交（使用有意义的提交信息）
@@ -102,10 +186,9 @@ git commit -m "feat: add stock price normalization function"
 # test: 添加测试
 ```
 
-### Step 3: 推送代码
+### Step 4: 推送代码
 
 ```bash
-# 推送到远程分支
 git push origin feature/your-feature-name
 ```
 
@@ -157,15 +240,15 @@ git push origin feature/your-feature-name
 
 ### 回应反馈
 
+根据反馈修改代码后：
+
 ```bash
-# 根据反馈修改代码
-# 提交新的更改
 git add .
 git commit -m "refactor: address review comments"
 git push origin feature/your-feature-name
-
-# PR 会自动更新！
 ```
+
+PR 会自动更新！
 
 ---
 
@@ -175,17 +258,11 @@ PR 获批后：
 
 1. 点击 **"Squash and merge"** 或 **"Create a merge commit"**
 2. 分支会自动删除
-3. 本地更新：
+3. 本地更新（Codespace 会自动同步）：
 
 ```bash
-# 切换到 develop
 git checkout develop
-
-# 拉取最新更改
 git pull origin develop
-
-# 删除本地功能分支
-git branch -d feature/your-feature-name
 ```
 
 ---
@@ -231,11 +308,13 @@ Group-19-Machine-Learning-and-Finance/
 
 ### 添加新功能
 
+**在 Codespace 或本地终端中：**
+
 ```bash
 # 1. 创建功能分支
 git checkout -b feature/my-feature
 
-# 2. 在 src/ 中添加代码
+# 2. 在 src/ 中添加代码（用编辑器编辑文件）
 
 # 3. 在 tests/ 中添加对应测试
 
@@ -256,7 +335,7 @@ git push origin feature/my-feature
 # 1. 创建 bugfix 分支
 git checkout -b bugfix/bug-name
 
-# 2. 修改代码
+# 2. 修改代码（用编辑器）
 
 # 3. 添加测试验证修复
 
@@ -331,6 +410,8 @@ test(preprocessing): add unit tests for normalization
 
 ### 运行所有测试
 
+在终端中输入：
+
 ```bash
 pytest tests/ -v
 ```
@@ -371,12 +452,15 @@ class TestFinancialPredictor:
 **A:** 从 `develop` 分支创建（除非明确指定）。
 
 ### Q2: 如何同步最新的 develop 分支？
+
+在 Codespace 或终端中：
+
 ```bash
 git fetch origin
 git rebase origin/develop
 ```
 
-### Q3: 我在功能分支上提交了但还没 push，可以修改提交吗？
+### Q3: 我提交了但还没 push，可以修改提交吗？
 ```bash
 # 修改最后一次提交
 git commit --amend
@@ -409,6 +493,15 @@ git commit -m "Merge develop into feature branch"
 git push origin feature/my-feature
 ```
 
+### Q6: Codespace 多久会自动关闭？
+**A:** 30 分钟不活动会自动关闭。再次访问仓库可以恢复。
+
+### Q7: Codespace 有免费额度吗？
+**A:** 是的，GitHub 学生账户有免费额度。超过需要付费。
+
+### Q8: 在 Codespace 中怎么打开编辑器编辑文件？
+**A:** 左边有文件浏览器，直接点击文件即可打开编辑。
+
 ---
 
 ## 🎯 团队协作最佳实践
@@ -420,6 +513,7 @@ git push origin feature/my-feature
 - ✓ 及时响应 code review 反馈
 - ✓ 保持分支最新（定期从 develop rebase）
 - ✓ 使用 PR 模板提供清晰的描述
+- ✓ 使用 Codespace 保持环境一致
 
 ❌ **DON'T:**
 - ✗ 直接 push 到 `main` 或 `develop`
@@ -437,16 +531,28 @@ git push origin feature/my-feature
 - [GitHub Flow 指南](https://guides.github.com/introduction/flow/)
 - [Conventional Commits](https://www.conventionalcommits.org/)
 - [PEP 8 Python 风格指南](https://www.python.org/dev/peps/pep-0008/)
+- [GitHub Codespace 文档](https://docs.github.com/en/codespaces)
 
 ---
 
 ## 🚀 开始协作！
 
-1. 每个团队成员克隆仓库
-2. 创建自己的功能分支
-3. 进行开发和提交
-4. 创建 PR 并请求审查
-5. 合并到 develop
-6. 定期合并到 main（发布时）
+### 对于新成员：
+
+1. 访问仓库：https://github.com/lzr-cn/Group-19-Machine-Learning-and-Finance
+2. 创建 Codespace（推荐！）或本地克隆
+3. 安装依赖：`pip install -r requirements.txt`
+4. 运行测试：`pytest tests/ -v`
+5. 阅读 README.md 了解项目
+6. 等待任务分配
+7. 创建功能分支开始开发
+
+### 对于任务管理：
+
+1. 每个团队成员分配一个功能分支
+2. 进行开发和提交
+3. 创建 PR 并请求审查
+4. 合并到 develop
+5. 定期合并到 main（发布时）
 
 **祝你们协作愉快！** 🎉
