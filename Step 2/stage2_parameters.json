@@ -1,0 +1,20 @@
+{
+  "start": "2010-01-01",
+  "end": "2024-12-31",
+  "price_floor": 5.0,
+  "adv20_floor": 10000000.0,
+  "min_year_start_mcap": 1000000000.0,
+  "ann_vol_band": [
+    0.05,
+    1.5
+  ],
+  "earnings_window_days": 1,
+  "participation_cap": 0.05,
+  "impact_k": 0.7,
+  "basket_names_per_side": 100,
+  "aum_levels": [
+    50000000,
+    250000000,
+    1000000000
+  ]
+}
