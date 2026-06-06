@@ -1,0 +1,3 @@
+model,window,si_threshold,short_leg_gross_units_total,short_leg_gross_units_high_si,high_si_share_of_short_pnl
+xgboost_only,oos_2019_2024,0.1,-6.891499825405944,-1.5060922884707364,0.21854347045304032
+ridge_xgb_ensemble,oos_2019_2024,0.1,-5.036475297609168,0.32807966861106896,-0.06514072823246239
