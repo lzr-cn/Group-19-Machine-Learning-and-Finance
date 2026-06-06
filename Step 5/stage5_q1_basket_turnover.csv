@@ -1,0 +1,4 @@
+aum,model,window,quantile,median_names_per_side,min_names_per_side,max_names_per_side,weighting,avg_daily_turnover,avg_gross_exposure
+50000000,xgboost_only,oos_2019_2024,0.02,19,14,20,equal weight + participation-cap redistribution,0.9998851027431656,0.9998851027431656
+250000000,xgboost_only,oos_2019_2024,0.02,19,14,20,equal weight + participation-cap redistribution,0.900450446248223,0.900450446248223
+1000000000,xgboost_only,oos_2019_2024,0.02,19,14,20,equal weight + participation-cap redistribution,0.5030860691341361,0.5030860691341361
