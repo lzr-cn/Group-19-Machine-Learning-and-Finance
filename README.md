@@ -16,13 +16,6 @@ This repository contains research, code, and analysis for machine learning appli
 ├── README.md                 # Project overview
 ├── .gitignore               # Git ignore rules
 ├── requirements.txt         # Python dependencies
-├── data/                    # Data files and datasets
-├── notebooks/               # Jupyter notebooks for analysis
-├── src/                     # Source code modules
-│   ├── __init__.py
-│   ├── preprocessing.py     # Data preprocessing utilities
-│   ├── models.py            # Machine learning models
-│   └── utils.py             # Helper functions
 ├── tests/                   # Unit tests
 ├── docs/                    # Documentation
 └── results/                 # Output results and visualizations
