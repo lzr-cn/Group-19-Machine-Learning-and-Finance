@@ -1,0 +1,14 @@
+{
+  "borrow_rate_A_bps": 40.0,
+  "borrow_rate_B_bps": 200.0,
+  "borrow_rate_C_bps": 800.0,
+  "trading_days_per_year": 252.0,
+  "htb_dsi_floor": 0.1,
+  "htb_dtcn_floor": 10.0,
+  "deep_dsi_floor": 0.2,
+  "deep_dtcn_floor": 20.0,
+  "near_deep_dsi": 0.15,
+  "near_deep_dtcn": 15.0,
+  "stress_quantile": 0.9,
+  "seed": 20260531
+}
