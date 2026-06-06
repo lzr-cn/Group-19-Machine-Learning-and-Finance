@@ -61,7 +61,7 @@ jupyter notebook notebooks/
 
 ## Team Members
 
-- Group 19 Contributors
+- Haoyu Xiu, Yanjie Huang, Yuchao Wu, Zhanrong Liu
 
 ## License
 
