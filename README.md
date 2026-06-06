@@ -16,6 +16,11 @@ This repository contains research, code, and analysis for machine learning appli
 ├── README.md                 # Project overview
 ├── .gitignore               # Git ignore rules
 ├── requirements.txt         # Python dependencies
+├── step 1/                  # Step 1 codes and outputs
+├── step 2/                  # Step 2 codes and outputs
+├── step 3/                  # Step 3 codes and outputs
+├── step 4/                  # Step 4 codes and outputs
+├── step 5/                  # Step 5 codes and outputs
 ├── tests/                   # Unit tests
 ├── docs/                    # Documentation
 └── results/                 # Output results and visualizations
