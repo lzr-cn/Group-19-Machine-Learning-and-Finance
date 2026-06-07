@@ -1,4 +1,4 @@
-"""Stage 1 and Stage 2 pipeline for the C2O coursework.
+
 
 The script builds:
 1. A point-in-time daily price/return panel and the frozen yearly top-1000
