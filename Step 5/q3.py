@@ -1,6 +1,6 @@
 """Section 6 - Q3: gross-to-net Sharpe degradation.
 
-Standalone: ``python q3.py``.
+
 
 The brief-facing headline is the 250M XGBoost-only strategy over the full
 2010-2024 development window. We also keep the 250M Ridge+XGBoost OOS ensemble
