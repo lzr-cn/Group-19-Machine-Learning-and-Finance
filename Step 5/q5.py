@@ -1,7 +1,5 @@
 """Section 6 - Q5: stress-window analysis.
 
-Standalone: ``python q5.py``.
-
 The headline stress table uses the 250M XGBoost-only strategy over 2010-2024.
 The OOS Ridge+XGBoost ensemble stress table is retained as a robustness diagnostic.
 """
