@@ -1,14 +1,6 @@
 
 
-The script builds:
-1. A point-in-time daily price/return panel and the frozen yearly top-1000
-   base universe.
-2. Clean earnings and short-interest timing tables.
-3. A capacity-aware eligibility table for Step 2 of the brief.
 
-Run from the repository root:
-    python src/stage1_stage2.py
-"""
 
 from __future__ import annotations
 
