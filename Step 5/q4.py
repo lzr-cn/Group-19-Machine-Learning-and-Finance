@@ -1,7 +1,5 @@
 """Section 6 - Q4: QuantStats tear-sheets versus SP500_TR.
 
-Standalone: ``python q4.py``.
-
 The required deliverable is the 250M XGBoost-only strategy over 2010-2024.
 An OOS Ridge+XGBoost ensemble tear-sheet is also rendered as a robustness diagnostic.
 """
