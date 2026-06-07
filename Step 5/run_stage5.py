@@ -1,9 +1,5 @@
 """Stage 5 - single-command reproduction.
 
-Run from this folder with:
-
-    python run_stage5.py
-
 This script keeps two reporting layers separate:
 * headline: XGBoost-only, full 2010-2024, because it has full development-window coverage;
 * robustness: Ridge+XGBoost ensemble, OOS 2019-2024, because Ridge exists only OOS.
