@@ -1,0 +1,42 @@
+{
+  "target": "target_r_on_next",
+  "eligibility_filter": "is_trade_eligible == True",
+  "date_window": {
+    "start_date": "2010-01-01",
+    "end_date": "2024-12-31"
+  },
+  "sample_split": {
+    "train": "2010-01-01 to 2018-12-31",
+    "valid": "2019-01-01 to 2021-12-31",
+    "test": "2022-01-01 to 2024-12-31"
+  },
+  "features": [
+    "r_on_today",
+    "r_on_lag1",
+    "r_id_lag1",
+    "r_cc_lag1",
+    "r_on_mean_5",
+    "r_on_mean_20",
+    "r_id_mean_5_lag1",
+    "r_id_mean_20_lag1",
+    "r_cc_mean_5_lag1",
+    "r_cc_mean_20_lag1",
+    "vol_20_lag1",
+    "vol_60_lag1",
+    "abs_r_on_today",
+    "abs_r_cc_lag1",
+    "price_for_filter",
+    "adv20",
+    "ann_vol60",
+    "year_start_market_cap",
+    "market_cap_rank",
+    "dsi",
+    "dtcn",
+    "ddtcn",
+    "month",
+    "day_of_week",
+    "is_month_end",
+    "is_quarter_end"
+  ],
+  "note": "Features are constructed to avoid look-ahead bias. Close-based variables are shifted by one trading day. target_r_on_next is the next observed overnight return and is used only as label."
+}
