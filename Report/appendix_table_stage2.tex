@@ -1,0 +1,28 @@
+\section{Appendix}
+\begin{table}[htbp]
+\centering
+\scriptsize
+\begin{tabular}{rrrrrrr}
+\hline
+Year & ADV\_FAIL & MCAP\_FAIL & EARN\_WINDOW & MISSING\_LOOKBACK & PRICE\_FAIL & VOL\_FAIL \\
+\hline
+2010 & 16,603 & 55,332 & 1,613 & 40,000 & 7,172 & 0 \\
+2011 & 23,047 & 45,716 & 3,802 & 960 & 9,186 & 0 \\
+2012 & 24,994 & 43,099 & 3,612 & 1,160 & 6,911 & 0 \\
+2013 & 29,994 & 27,440 & 3,433 & 1,280 & 3,880 & 0 \\
+2014 & 33,109 & 0 & 4,874 & 1,280 & 2,624 & 0 \\
+2015 & 24,687 & 0 & 8,108 & 1,600 & 2,512 & 0 \\
+2016 & 20,424 & 0 & 8,577 & 1,040 & 1,692 & 173 \\
+2017 & 15,032 & 0 & 9,077 & 1,120 & 978 & 61 \\
+2018 & 7,798 & 0 & 9,698 & 1,120 & 376 & 27 \\
+2019 & 6,141 & 0 & 9,968 & 1,280 & 1,172 & 160 \\
+2020 & 5,898 & 0 & 10,050 & 1,280 & 1,699 & 2,362 \\
+2021 & 2,100 & 0 & 10,741 & 1,760 & 50 & 116 \\
+2022 & 2,061 & 0 & 11,009 & 1,160 & 168 & 187 \\
+2023 & 1,730 & 0 & 11,363 & 1,040 & 408 & 162 \\
+2024 & 889 & 0 & 11,761 & 640 & 2 & 326 \\
+\hline
+\end{tabular}
+\caption{Year-by-year Stage 2 exclusion counts by first binding reason. Entries are stock-day counts. \texttt{ADV\_FAIL} means the stock failed the lagged dollar-volume floor; \texttt{MCAP\_FAIL} failed the year-start market-cap floor; \texttt{EARN\_WINDOW} was inside the earnings exclusion window; \texttt{MISSING\_LOOKBACK} indicates insufficient lagged history for the rolling filters; \texttt{PRICE\_FAIL} failed the previous-close price floor; and \texttt{VOL\_FAIL} fell outside the realised-volatility band. Zeros indicate that no stock-days were excluded for that reason in that year.}
+\label{tab:stage2_reason_by_year}
+\end{table}
